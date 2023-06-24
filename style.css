@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+body {
+    background-color: rgb(90, 2, 90);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    box-sizing: content-box;
+    background-color: #fff;
+    height: 70px;
+    padding: 50px 30px;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+}
+
+span {
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    animation: rotate_words 6s infinite;
+}
+
+.words {
+    overflow: hidden;
+    color: darkblue;
+}
+
+@keyframes rotate_words {
+    10% {
+        transform: translateY(-112%);
+    }
+    25% {
+        transform: translateY(-100%);
+    }
+    35% {
+        transform: translateY(-212%);
+    }
+    50% {
+        transform: translateY(-200%);
+    }
+    60% {
+        transform: translateY(-312%);
+    }
+    75% {
+        transform: translateY(-300%);
+    }
+    85% {
+        transform: translateY(-412%);
+    }
+    100% {
+        transform: translateY(-400%);
+    }
+}
